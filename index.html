@@ -2,168 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mueletshedzi Moses Mubvafhi - Personal Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar container">
-            <a href="#" class="logo">Mueletshedzi Moses Mubvafhi</a>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle">
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
-        </nav>
-    </header>
-
-    <aside class="sidebar">
-        <div class="sidebar-info">
-            <figure class="avatar-box">
-                <img src="./assets/images/profile.png" alt="Mueletshedzi Moses Mubvafhi">
-            </figure>
-            <div class="info-content">
-                <h1 class="name">Mueletshedzi Moses Mubvafhi</h1>
-                <p class="title">Software Engineer | AI | Data Science & Cybersecurity Enthusiast</p>
-                <button class="info-more-btn">
-                    <span>Show Contacts</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">Mueletshedzi Moses Mubvafhi</a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="nav-toggle" aria-label="toggle navigation">
+                        <span class="hamburger"></span>
+                    </button>
+                </nav>
             </div>
         </div>
-        <div class="sidebar-info-more">
-            <div class="separator"></div>
-            <ul class="contacts-list">
-                <li class="contact-item">
-                    <a href="mailto:mubvafhimoses813@gmail.com" class="contact-link">
-                        <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <p class="contact-link">mubvafhimoses813@gmail.com</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-                    <div class="contact-info">
-                        <p class="contact-title">Phone</p>
-                        <a href="tel:+27832521214" class="contact-link">+27 83 252 1214</a>
-                    </div>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
-                    <div class="contact-info">
-                        <p class="contact-title">Birthday</p>
-                        <time datetime="1999-03-09">March 9, 1999</time>
-                    </div>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-                    <div class="contact-info">
-                        <p class="contact-title">Location</p>
-                        <address>Johannesburg, Gauteng, South Africa</address>
-                    </div>
-                </li>
-            </ul>
-            <div class="separator"></div>
-            <ul class="social-list">
-                <li class="social-item">
-                    <a href="https://www.linkedin.com/in/mueletshedzi-moses-mubvafhi-9b682a220" class="social-link" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a href="https://github.com/KillMonga130" class="social-link" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </aside>
+    </header>
 
-    <main class="main-content">
-        <section id="hero" class="hero-section">
-            <div class="container hero-content">
-                <h1>Software Engineer | AI | Data Science & Cybersecurity Enthusiast</h1>
-                <p>👋 Hi, I'm Mueletshedzi Moses Mubvafhi, a dedicated software engineering enthusiast with a keen interest in data science. I specialize in developing innovative web and AI-driven solutions to tackle complex problems.</p>
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
                 <div class="hero-image">
                     <img src="./assets/images/profile.png" alt="Mueletshedzi Moses Mubvafhi">
                 </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>💻 With proficiency in Java, C++, C#, Python, Visual Basic, .NET Framework, SQL, and web development using HTML, CSS, PHP, C#, ASP.NET, and JavaScript, I have a knack for rapid language acquisition.</p>
-                <p>🌱 While I'm still at the beginning of my journey and have yet to make a name for myself in the industry, I thrive in dynamic environments and am eager to lend my expertise to impactful projects. I champion creativity and technical prowess to drive innovation and progress.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <a href="https://github.com/KillMonga130/food-delivery-backend" target="_blank">
-                            <img src="./assets/images/project-1.svg" alt="Food Delivery Backend">
-                            <h3>Food Delivery Backend</h3>
-                            <p>Backend System for a Simplified Food Delivery App</p>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="https://github.com/KillMonga130/User-Behavior-Analysis-and-Product-Recommendation" target="_blank">
-                            <img src="./assets/images/project-2.svg" alt="User Behavior Analysis">
-                            <h3>User Behavior Analysis</h3>
-                            <p>Analyze user interaction data and build recommendation models.</p>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="https://github.com/KillMonga130/To-Do-List-API" target="_blank">
-                            <img src="./assets/images/project-3.svg" alt="To-Do List API">
-                            <h3>To-Do List API</h3>
-                            <p>API for managing to-do tasks with authentication.</p>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="https://github.com/KillMonga130/Personal-Blogging-Platform-API" target="_blank">
-                            <img src="./assets/images/project-4.svg" alt="Personal Blogging Platform API">
-                            <h3>Personal Blogging Platform API</h3>
-                            <p>RESTful API for a personal blogging platform.</p>
-                        </a>
-                    </div>
-                    <div class="project-item">
-                        <a href="https://github.com/KillMonga130/smartIncidentManagementSystem" target="_blank">
-                            <img src="./assets/images/project-5.svg" alt="Smart Incident Management System">
-                            <h3>Smart Incident Management System</h3>
-                            <p>A comprehensive system with predictive analytics and real-time features.</p>
-                        </a>
-                    </div>
+                <div class="hero-text">
+                    <h1>Mueletshedzi Moses Mubvafhi</h1>
+                    <p>Software Engineer | AI | Data Science & Cybersecurity Enthusiast</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Contact</h2>
-                <ul class="contact-list">
-                    <li>Email: <a href="mailto:mubvafhimoses813@gmail.com">mubvafhimoses813@gmail.com</a></li>
-                    <li>Phone: <a href="tel:+27832521214">+27 83 252 1214</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/mueletshedzi-moses-mubvafhi-9b682a220" target="_blank">Mueletshedzi Moses Mubvafhi</a></li>
-                </ul>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>With proficiency in Java, C++, C#, Python, Visual Basic, .NET Framework, SQL, and web development using HTML, CSS, PHP, C#, ASP.NET, and JavaScript, I have a knack for rapid language acquisition.</p>
+            <p>While I'm still at the beginning of my journey and have yet to make a name for myself in the industry, I thrive in dynamic environments and am eager to lend my expertise to impactful projects. I champion creativity and technical prowess to drive innovation and progress.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <a href="https://github.com/KillMonga130/food-delivery-backend" target="_blank">
+                        <img src="./assets/images/project-1.svg" alt="Food Delivery Backend">
+                        <h3>Food Delivery Backend</h3>
+                        <p>Backend System for a Simplified Food Delivery App</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://github.com/KillMonga130/User-Behavior-Analysis-and-Product-Recommendation" target="_blank">
+                        <img src="./assets/images/project-2.svg" alt="User Behavior Analysis">
+                        <h3>User Behavior Analysis</h3>
+                        <p>Analyze user interaction data and build recommendation models.</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://github.com/KillMonga130/To-Do-List-API" target="_blank">
+                        <img src="./assets/images/project-3.svg" alt="To-Do List API">
+                        <h3>To-Do List API</h3>
+                        <p>API for managing to-do tasks with authentication.</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://github.com/KillMonga130/Personal-Blogging-Platform-API" target="_blank">
+                        <img src="./assets/images/project-4.svg" alt="Personal Blogging Platform API">
+                        <h3>Personal Blogging Platform API</h3>
+                        <p>RESTful API for a personal blogging platform.</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://github.com/KillMonga130/smartIncidentManagementSystem" target="_blank">
+                        <img src="./assets/images/project-5.svg" alt="Smart Incident Management System">
+                        <h3>Smart Incident Management System</h3>
+                        <p>A comprehensive system with predictive analytics and real-time features.</p>
+                    </a>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:mubvafhimoses813@gmail.com">mubvafhimoses813@gmail.com</a></li>
+                <li>Phone: <a href="tel:+27832521214">+27 83 252 1214</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/mueletshedzi-moses-mubvafhi-9b682a220" target="_blank">Mueletshedzi Moses Mubvafhi</a></li>
+            </ul>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
