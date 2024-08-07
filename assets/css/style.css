@@ -2,15 +2,21 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #121212;
+    background: #181818;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .header {
     background: #333;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -135,7 +141,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 100px 0;
-    background: #1e1e1e;
+    background: #181818;
     color: #e0e0e0;
 }
 
@@ -157,3 +163,75 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.about-section h2, .projects-section h2, .contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    text-align: center;
+    background: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffa500;
+}
+
+.project-item p {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list li a {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-list li a:hover {
+    color: #ff4500;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}

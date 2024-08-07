@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mueletshedzi Moses Mubvafhi - Personal Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,40 +14,36 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="#" class="logo">Mueletshedzi Moses Mubvafhi</a>
-                <ul class="nav-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+        <nav class="navbar container">
+            <a href="#" class="logo">Mueletshedzi Moses Mubvafhi</a>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-
-    <aside class="sidebar" data-sidebar>
+    
+    <aside class="sidebar">
         <div class="sidebar-info">
             <figure class="avatar-box">
-                <img src="./assets/images/profile.png" alt="Mueletshedzi Moses Mubvafhi" width="80">
+                <img src="./assets/images/profile.png" alt="Mueletshedzi Moses Mubvafhi">
             </figure>
             <div class="info-content">
-                <h1 class="name" title="Mueletshedzi Moses Mubvafhi">Mueletshedzi Moses Mubvafhi</h1>
+                <h1 class="name">Mueletshedzi Moses Mubvafhi</h1>
                 <p class="title">Software Engineer | AI | Data Science & Cybersecurity Enthusiast</p>
+                <button class="info_more-btn">
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
             </div>
-            <button class="info_more-btn" data-sidebar-btn>
-                <span>Show Contacts</span>
-                <ion-icon name="chevron-down"></ion-icon>
-            </button>
         </div>
         <div class="sidebar-info_more">
             <div class="separator"></div>
             <ul class="contacts-list">
                 <li class="contact-item">
-                    <a href="mailto:mubvafhimoses813@gmail.com" class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
+                    <a href="mailto:mubvafhimoses813@gmail.com" class="contact-link">
+                        <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
                         <div class="contact-info">
                             <p class="contact-title">Email</p>
                             <p class="contact-link">mubvafhimoses813@gmail.com</p>
@@ -55,27 +51,21 @@
                     </a>
                 </li>
                 <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="phone-portrait-outline"></ion-icon>
-                    </div>
+                    <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
                     <div class="contact-info">
                         <p class="contact-title">Phone</p>
                         <a href="tel:+27 83 252 1214" class="contact-link">+27 83 252 1214</a>
                     </div>
                 </li>
                 <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="calendar-outline"></ion-icon>
-                    </div>
+                    <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
                     <div class="contact-info">
                         <p class="contact-title">Birthday</p>
                         <time datetime="1999-03-09">March 9, 1999</time>
                     </div>
                 </li>
                 <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="location-outline"></ion-icon>
-                    </div>
+                    <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
                     <div class="contact-info">
                         <p class="contact-title">Location</p>
                         <address>Johannesburg, Gauteng, South Africa</address>
@@ -97,14 +87,12 @@
             </ul>
         </div>
     </aside>
-    
+
     <main>
         <section id="hero" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Software Engineer | AI | Data Science & Cybersecurity Enthusiast</h1>
-                    <p>👋 Hi, I'm Mueletshedzi Moses Mubvafhi, a dedicated software engineering enthusiast with a keen interest in data science. I specialize in developing innovative web and AI-driven solutions to tackle complex problems.</p>
-                </div>
+            <div class="container hero-content">
+                <h1>Software Engineer | AI | Data Science & Cybersecurity Enthusiast</h1>
+                <p>👋 Hi, I'm Mueletshedzi Moses Mubvafhi, a dedicated software engineering enthusiast with a keen interest in data science. I specialize in developing innovative web and AI-driven solutions to tackle complex problems.</p>
                 <div class="hero-image">
                     <img src="./assets/images/profile.png" alt="Mueletshedzi Moses Mubvafhi">
                 </div>
