@@ -123,6 +123,7 @@ header {
 .cta {
     display: inline-block;
     margin-top: 20px;
+    margin-right: 10px;
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
@@ -316,7 +317,6 @@ header {
     background: #555;
 }
 
-/* Footer Styles */
 .footer {
     background: #1f1f1f;
     color: #fff;
