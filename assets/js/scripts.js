@@ -1,7 +1,7 @@
 // script.js
 
 // Smooth scrolling for navigation links
-document.querySelectorAll('.navbar .nav-list li a').forEach(anchor => {
+document.querySelectorAll('.navbar .nav-links li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -11,6 +11,6 @@ document.querySelectorAll('.navbar .nav-list li a').forEach(anchor => {
 });
 
 // Mobile menu toggle
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-    document.querySelector('.nav-list').classList.toggle('active');
+document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
 });
