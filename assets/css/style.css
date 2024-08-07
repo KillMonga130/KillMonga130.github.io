@@ -48,6 +48,11 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-list li a:hover {
+    color: #aaa;
 }
 
 .hero-section {
@@ -86,6 +91,15 @@ body {
 
 .project-item {
     text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-item img {
@@ -97,6 +111,11 @@ body {
 .project-item h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 0.9em;
+    color: #555;
 }
 
 .contact-list {
@@ -112,6 +131,11 @@ body {
     color: #333;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-list li a:hover {
+    color: #007BFF;
 }
 
 .footer {
