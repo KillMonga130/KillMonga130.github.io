@@ -1,17 +1,24 @@
+/* style.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: linear-gradient(to right, #f4f4f4, #fff);
+    color: #333;
 }
 
-header {
+.header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -21,24 +28,86 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-section {
-    padding: 2rem;
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+.section {
+    padding: 80px 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.about-section {
     background: #fff;
-    margin: 1rem auto;
-    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
+.projects-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.projects-section li {
+    margin: 1rem 0;
+}
+
+.projects-section li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.projects-section li a:hover {
+    color: #555;
+}
+
+.contact-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.footer {
     text-align: center;
     padding: 1rem;
     background: #333;
     color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        margin: 4rem auto;
+        padding: 100px 3rem;
+    }
 }
