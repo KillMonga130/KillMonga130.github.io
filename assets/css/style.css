@@ -106,10 +106,10 @@ header {
 }
 
 .hero-image img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
 }
 
 .hero-text h1 {
