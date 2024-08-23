@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Toggle Mobile Menu
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const typingEffectElement = document.getElementById('typing-effect');
+
+    const text = "I know, it's bad right? 😂";
+    let index = 0;
 
     navToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
@@ -32,4 +36,15 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('sticky');
         }
     });
+
+    function typeText() {
+        if (index < text.length) {
+            typingEffectElement.innerHTML = `<span>${text.substring(0, index + 1)}</span>`;
+            index++;
+            setTimeout(typeText, 100);
+        }
+    }
+
+    // Start typing effect after the cube animation
+    setTimeout(typeText, 3000);
 });

@@ -340,3 +340,31 @@ h2 {
         padding: 8px 18px;
     }
 }
+
+
+/* Typing Effect */
+.typing-effect {
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e2e;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.typing-effect span {
+    border-right: 2px solid #ffcc00;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #ffcc00 }
+}
