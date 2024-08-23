@@ -45,6 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Start typing effect after the cube animation
-    setTimeout(typeText, 3000);
+    // Start typing effect immediately
+    typeText();
 });
