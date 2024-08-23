@@ -387,3 +387,11 @@ header {
         padding-top: 60px;
     }
 }
+
+.project-item video, .project-item iframe {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
