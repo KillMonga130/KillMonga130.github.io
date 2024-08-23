@@ -48,10 +48,11 @@ body {
 }
 
 .hero-section {
-    background: url('./assets/images/hero-bg.jpg') no-repeat center center/cover;
+    background-color: #f4f7fc;
+    color: #333;
     padding: 100px 0;
-    color: #fff;
     text-align: center;
+    position: relative;
 }
 
 .hero-content {
@@ -63,11 +64,13 @@ body {
 .hero-text h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .hero-text p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color: #666;
 }
 
 .cta {
@@ -89,10 +92,12 @@ body {
 .hero-image img {
     max-width: 100%;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .about-section, .skills-section, .projects-section, .contact-section {
     padding: 60px 0;
+    background-color: #fff;
 }
 
 .container {
@@ -147,6 +152,19 @@ h2 {
 .project-item h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
+    color: #333;
+}
+
+.project-item p {
+    color: #666;
+}
+
+.project-item video {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .contact-form {
@@ -162,6 +180,7 @@ h2 {
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
+    color: #333;
 }
 
 .form-group input, .form-group textarea {
@@ -169,6 +188,7 @@ h2 {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    color: #333;
 }
 
 .btn {
