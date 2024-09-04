@@ -1,12 +1,10 @@
-// JavaScript for Interactive Features - script.js
-
 document.addEventListener('DOMContentLoaded', function () {
     // Toggle Mobile Menu
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     const typingEffectElement = document.getElementById('typing-effect');
 
-    const text = "I know, it's bad right? 😂";
+    const text = "Building the future of AI, one line of code at a time.";
     let index = 0;
 
     navToggle.addEventListener('click', () => {

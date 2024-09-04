@@ -368,3 +368,116 @@ h2 {
     from, to { border-color: transparent }
     50% { border-color: #ffcc00 }
 }
+
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+.hero-section.dark-mode {
+    background-color: #000;
+}
+
+.nav-links a.dark-mode {
+    color: #fff;
+}
+
+/* Rotating Cube */
+.cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotateCube 6s infinite linear;
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* Animated Progress Bars */
+.progress-bar span {
+    display: block;
+    height: 10px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Project Hover Effect */
+.project-card:hover .project-info {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Project Cards */
+.project-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-info {
+    padding: 20px 0;
+}
+
+.project-info h3 {
+    font-size: 1.6rem;
+    color: #1e1e2e;
+    font-weight: 600;
+}
+
+.project-info p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Video Styling */
+.project-card video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pac-Man SVG */
+.pacman-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pacman-svg svg {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pacman-svg:hover svg {
+    transform: rotate(20deg);
+}
