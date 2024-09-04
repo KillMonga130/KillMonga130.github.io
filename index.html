@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Portfolio of Mueletshedzi Moses Mubvafhi - AI Engineer and Software Developer. Showcasing AI projects, skills, and contributions in the tech industry.">
-    <title>Mueletshedzi Moses Mubvafhi - AI Engineer Portfolio</title>
+    <meta property="og:title" content="Mueletshedzi Moses Mubvafhi - AI Engineer Portfolio">
+    <meta property="og:description" content="AI Engineer and Software Developer portfolio showcasing cutting-edge projects and skills.">
+    <meta property="og:image" content="./assets/images/profile.png">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -58,7 +61,7 @@
                     <a href="./assets/Resume.pdf" class="cta download-resume">Download Resume</a>
                 </div>
                 <div class="hero-image">
-                    <img src="./assets/images/profile.png" alt="Mueletshedzi Moses Mubvafhi">
+                    <img src="./assets/images/profile.png" alt="Mueletshedzi Moses Mubvafhi" loading="lazy">
                     <!-- Adding cool rotating 3D cube animation -->
                     <div class="hero-animation">
                         <div class="cube">
@@ -150,14 +153,14 @@
                             <h3>Lunar Lander AI Model</h3>
                             <p>Deep Q-Network model for solving Lunar Lander with reinforcement learning.</p>
                         </div>
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="./assets/videos/lunar_lander_demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </a>
                 </div>
     
-                <!-- Project Card 2 with SVG -->
+                <!-- Project Card 2 with SVG and Video -->
                 <div class="project-card">
                     <a href="https://github.com/KillMonga130/pacman-ai" target="_blank">
                         <!-- Include Pac-Man SVG -->
@@ -172,6 +175,10 @@
                             <h3>Pac-Man AI</h3>
                             <p>Deep Convolutional Q-Learning (DCQN) model for Pac-Man gameplay optimization.</p>
                         </div>
+                        <video controls loading="lazy">
+                            <source src="./assets/videos/pacman_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </a>
                 </div>
     
@@ -218,9 +225,15 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Mueletshedzi Moses Mubvafhi</p>
+            <div class="social-links">
+                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
             <a href="#" class="back-to-top">Back to Top</a>
         </div>
     </footer>
+    
     
 
     <script src="./assets/js/script.js"></script>
