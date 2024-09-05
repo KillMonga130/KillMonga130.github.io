@@ -1,10 +1,12 @@
+// JavaScript for Interactive Features - script.js
+
 document.addEventListener('DOMContentLoaded', function () {
     // Toggle Mobile Menu
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     const typingEffectElement = document.getElementById('typing-effect');
 
-    const text = "Building the future of AI, one line of code at a time.";
+    const text = "I know, it's bad right? 😂";
     let index = 0;
 
     navToggle.addEventListener('click', () => {
@@ -37,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function typeText() {
         if (index < text.length) {
-            typingEffectElement.innerHTML = `<span>${text.substring(0, index + 1)}</span>`;
+            typingEffectElement.innerHTML = <span>${text.substring(0, index + 1)}</span>;
             index++;
             setTimeout(typeText, 100);
         }
@@ -45,18 +47,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Start typing effect immediately
     typeText();
-
-
-    const form = document.querySelector('.contact-form');
-    form.addEventListener('submit', function(event) {
-    const name = document.querySelector('#name').value;
-    const email = document.querySelector('#email').value;
-    const message = document.querySelector('#message').value;
-    
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill in all fields');
-        event.preventDefault();
-    }
-});
-
 });
