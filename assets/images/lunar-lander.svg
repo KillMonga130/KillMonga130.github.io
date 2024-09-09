@@ -3,7 +3,9 @@
   <circle cx="50" cy="50" r="48" fill="#1e1e2e" stroke="#ffffff" stroke-width="2" />
   
   <!-- Lunar Lander Body -->
-  <rect x="35" y="30" width="30" height="30" rx="5" ry="5" fill="#d1d1e0" />
+  <rect id="lander-body" x="35" y="30" width="30" height="30" rx="5" ry="5" fill="#d1d1e0">
+    <animate attributeName="y" values="30;32;30" dur="2s" repeatCount="indefinite" />
+  </rect>
   
   <!-- Landing Legs -->
   <line x1="35" y1="60" x2="25" y2="75" stroke="#d1d1e0" stroke-width="3"/>
@@ -16,4 +18,11 @@
   <!-- Moon Surface -->
   <ellipse cx="50" cy="85" rx="40" ry="5" fill="#2e2e3e"/>
   
+  <!-- Hover Animation -->
+  <style>
+    #lander-body:hover {
+      fill: #ffcc00;
+      cursor: pointer;
+    }
+  </style>
 </svg>

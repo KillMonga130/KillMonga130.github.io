@@ -49,6 +49,43 @@ body {
     color: #ffcc00;
 }
 
+/* Mobile Navbar */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+  
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+  
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #1e1e2e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+  
+    .nav-active {
+        top: 0;
+    }
+  
+    .nav-toggle {
+        display: block;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     background-color: #f4f7fc;
@@ -170,7 +207,7 @@ h2 {
 
 .skills-grid, .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -185,7 +222,7 @@ h2 {
 
 .skill-item:hover, .project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .skill-item i {
@@ -253,6 +290,13 @@ h2 {
     border-radius: 5px;
     border: 1px solid #ddd;
     color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
 }
 
 .btn {
@@ -341,7 +385,6 @@ h2 {
     }
 }
 
-
 /* Typing Effect */
 .typing-effect {
     font-family: 'Poppins', sans-serif;
@@ -368,6 +411,3 @@ h2 {
     from, to { border-color: transparent }
     50% { border-color: #ffcc00 }
 }
-
-
-

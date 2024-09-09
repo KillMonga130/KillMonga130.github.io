@@ -4,13 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Toggle Mobile Menu
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    const typingEffectElement = document.getElementById('typing-effect');
+    const typingEffectElement = document.getElementById('typing-effect').querySelector('span');
 
     const text = "I know, it's bad right? 😂";
     let index = 0;
 
     navToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
+        navLinks.classList.toggle('nav-active');
     });
 
     // Smooth Scroll
@@ -20,10 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth',
-            });
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50, // Offset for fixed header
+                    behavior: 'smooth',
+                });
+            }
         });
     }
 
@@ -37,9 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Typing Effect Function
     function typeText() {
         if (index < text.length) {
-            typingEffectElement.innerHTML = <span>${text.substring(0, index + 1)}</span>;
+            typingEffectElement.innerHTML = `${text.substring(0, index + 1)}`;
             index++;
             setTimeout(typeText, 100);
         }
