@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mueletshedzi Moses Mubvafhi - AI Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">Mueletshedzi Mubvafhi</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#ai-demo">AI Demo</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Mueletshedzi Moses Mubvafhi</h1>
+                    <p>An AI Engineer, Passionate About Technology, Data, and Innovation</p>
+                    <a href="#contact" class="cta">Get in Touch</a>
+                    <a href="./assets/Resume.pdf" class="cta download-resume" download>Download Resume</a>
+                </div>
+                <canvas id="particle-background"></canvas> <!-- Interactive AI-Inspired Background -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm an AI Engineer with a background in building intelligent systems that harness the power of data.
+                I am focused on creating algorithms that can understand, predict, and adapt. My journey involves 
+                exploring the depths of AI through neural networks, reinforcement learning, and deep learning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Scikit-Learn, TensorFlow, Keras</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Software Development</h3>
+                    <p>Python, Java, JavaScript, .NET</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Science</h3>
+                    <p>Pandas, NumPy, Data Visualization</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Predictive Modeling, Statistical Analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="./assets/images/pacman.svg" alt="Pac-Man AI Model">
+                    <div class="project-info">
+                        <h3>Pac-Man AI Model</h3>
+                        <p>Developed a Deep Q-Network to train AI to play Pac-Man.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <img src="./assets/images/lunar-lander.svg" alt="Lunar Lander AI Model">
+                    <div class="project-info">
+                        <h3>Lunar Lander AI Model</h3>
+                        <p>Deep Reinforcement Learning for Lunar Lander AI Simulation.</p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <img src="./assets/images/smart-incident.svg" alt="Smart Incident Management System">
+                    <div class="project-info">
+                        <h3>Smart Incident Management System</h3>
+                        <p>AI-powered incident prediction and response optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Demo Section -->
+    <section id="ai-demo" class="ai-demo-section">
+        <div class="container">
+            <h2>AI Demo</h2>
+            <div class="demo-grid">
+                <div class="demo-chart" id="model-performance-chart"></div>
+                <div class="demo-code">
+                    <pre><code>// Deep Q-Learning Pac-Man Code Snippet
+class DQN_Agent():
+    def __init__(self, state_size, action_size):
+        self.state_size = state_size
+        self.action_size = action_size
+        # Deep Q-Network code here...
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <a href="mailto:mubvafhimoses813@gmail.com" class="btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/mueletshedzimoses" class="btn">LinkedIn Profile</a>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mueletshedzi Moses Mubvafhi</p>
+            <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

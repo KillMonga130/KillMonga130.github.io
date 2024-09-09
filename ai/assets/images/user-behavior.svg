@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="300" height="300">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="#1e1e2e" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- Eye Icon with Hover Animation -->
+  <ellipse id="eye" cx="50" cy="50" rx="25" ry="15" fill="#007acc" stroke="#ffffff" stroke-width="3">
+    <animate attributeName="rx" values="25;27;25" dur="1s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Pupil Animation -->
+  <circle id="pupil" cx="50" cy="50" r="7" fill="#ffffff" />
+  <circle id="iris" cx="50" cy="50" r="3" fill="#007acc">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 2 -2; 0 0" dur="1s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Analysis Lines with Movement -->
+  <line id="line1" x1="30" y1="50" x2="15" y2="40" stroke="#ffffff" stroke-width="2" />
+  <line id="line2" x1="70" y1="50" x2="85" y2="60" stroke="#ffffff" stroke-width="2" />
+  <line id="line3" x1="50" y1="65" x2="50" y2="85" stroke="#ffffff" stroke-width="2">
+    <animate attributeName="y2" values="85;82;85" dur="1s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Hover Animation -->
+  <style>
+    #eye:hover {
+      fill: #00ccff;
+      cursor: pointer;
+    }
+    #pupil:hover {
+      fill: #00ccff;
+      cursor: pointer;
+    }
+    #iris:hover {
+      fill: #ffffff;
+      cursor: pointer;
+    }
+  </style>
+</svg>
