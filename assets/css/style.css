@@ -416,12 +416,3 @@ h2 {
     50% { border-color: #ffcc00 }
 }
 
-/* Particle Background for Hero Section */
-#particle-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
