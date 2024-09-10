@@ -1,19 +1,128 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    // Initialize Particle Background
+    particlesJS('hero', {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffcc00"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 5,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffcc00",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+
     // Toggle Mobile Menu
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    const typingEffectElement = document.getElementById('typing-effect').querySelector('span');
 
-    const text = "Aspiring AI Engineer | Innovator | Data Enthusiast.";
-    let index = 0;
-
-    // Mobile menu toggle
     navToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
         navLinks.classList.toggle('nav-active');
     });
 
-    // Smooth Scroll
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('nav-active');
+        });
+    });
+
+    // Smooth Scroll for navigation links
     const links = document.querySelectorAll('.nav-links a, .back-to-top');
     links.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -23,13 +132,13 @@ document.addEventListener('DOMContentLoaded', function () {
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop - 50, // Adjust for fixed header
-                    behavior: 'smooth',
+                    behavior: 'smooth'
                 });
             }
         });
     });
 
-    // Sticky Header
+    // Sticky Header on Scroll
     const header = document.querySelector('header');
     window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
@@ -40,6 +149,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Typing Effect Function
+    const typingEffectElement = document.getElementById('typing-effect').querySelector('span');
+    const text = "Aspiring AI Engineer | Innovator | Data Enthusiast.";
+    let index = 0;
+
     function typeText() {
         if (index < text.length) {
             typingEffectElement.innerHTML = `${text.substring(0, index + 1)}`;
@@ -50,78 +163,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Start typing effect immediately
     typeText();
-
-    // Particle Background Animation
-    const canvas = document.getElementById('particle-background');
-    const ctx = canvas.getContext('2d');
-    let particlesArray = [];
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    class Particle {
-        constructor(x, y, directionX, directionY, size, color) {
-            this.x = x;
-            this.y = y;
-            this.directionX = directionX;
-            this.directionY = directionY;
-            this.size = size;
-            this.color = color;
-        }
-
-        draw() {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-            ctx.fillStyle = this.color;
-            ctx.fill();
-        }
-
-        update() {
-            if (this.x > canvas.width || this.x < 0) {
-                this.directionX = -this.directionX;
-            }
-            if (this.y > canvas.height || this.y < 0) {
-                this.directionY = -this.directionY;
-            }
-
-            this.x += this.directionX;
-            this.y += this.directionY;
-
-            this.draw();
-        }
-    }
-
-    function initParticles() {
-        particlesArray = [];
-        for (let i = 0; i < 100; i++) {
-            let size = (Math.random() * 5) + 1;
-            let x = Math.random() * (window.innerWidth - size * 2);
-            let y = Math.random() * (window.innerHeight - size * 2);
-            let directionX = (Math.random() * 0.4) - 0.2;
-            let directionY = (Math.random() * 0.4) - 0.2;
-            let color = '#ffcc00';
-
-            particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
-        }
-    }
-
-    function animateParticles() {
-        requestAnimationFrame(animateParticles);
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        particlesArray.forEach(particle => {
-            particle.update();
-        });
-    }
-
-    // Adjust canvas size on window resize
-    window.addEventListener('resize', function () {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        initParticles();
-    });
-
-    // Initialize and animate particles
-    initParticles();
-    animateParticles();
 });

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100" height="100">
+  <!-- Outer Circuit -->
+  <circle cx="100" cy="100" r="80" stroke="#ffcc00" stroke-width="8" fill="none"/>
+  
+  <!-- Inner Brain-like Structure -->
+  <path d="M70,100 C70,80 90,80 90,100 C90,120 110,120 110,100 C110,80 130,80 130,100 
+           C130,120 150,120 150,100" stroke="#ffcc00" stroke-width="6" fill="none" />
+
+  <!-- MM Initials in the Center -->
+  <text x="100" y="115" text-anchor="middle" font-family="Poppins, sans-serif" font-size="48" fill="#fff">MM</text>
+
+  <!-- Circuit Lines -->
+  <line x1="20" y1="100" x2="50" y2="100" stroke="#ffcc00" stroke-width="4"/>
+  <line x1="150" y1="100" x2="180" y2="100" stroke="#ffcc00" stroke-width="4"/>
+  
+  <line x1="100" y1="20" x2="100" y2="50" stroke="#ffcc00" stroke-width="4"/>
+  <line x1="100" y1="150" x2="100" y2="180" stroke="#ffcc00" stroke-width="4"/>
+</svg>

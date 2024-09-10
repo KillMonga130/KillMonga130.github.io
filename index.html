@@ -15,23 +15,27 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="#">Mueletshedzi Moses Mubvafhi</a>
-                </div>
-                <ul class="nav-links">
+                    <a href="#"><img src="./assets/images/logo.svg" alt="Mueletshedzi Moses Mubvafhi Logo" width="80" height="80"></a>
+                </div>                
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="nav-toggle" aria-label="toggle navigation">
+                <div class="nav-toggle" aria-label="toggle navigation" id="nav-toggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
                     <span class="hamburger"></span>
                 </div>
             </nav>
         </div>
-    </header>
+    </header>    
 
     <!-- Hero Section with Particle Background -->
     <section id="hero" class="hero-section">
+        <!-- Particle Background -->
+        <div id="particles-js"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
@@ -69,7 +73,6 @@
             <p>Driven by curiosity and a love for learning, my journey in technology is guided by a constant desire to push the boundaries of what's possible. I aim to use my knowledge and skills to contribute to transformative solutions that improve everyday experiences and foster innovation.</p>
         </div>
     </section>
-
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
@@ -170,7 +173,7 @@
                     </a>
                     <p>
                         Analyze user interaction data and build recommendation models. This project includes data preprocessing, 
-                        model training, and evaluationfor personalized recommendations.
+                        model training, and evaluation for personalized recommendations.
                     </p>
                 </div>
 
@@ -235,6 +238,53 @@
     <!-- Particle Background Script -->
     <script src="./assets/js/particles.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Particle Background
+            particlesJS.load('particles-js', './assets/particles.json');
+
+            // Toggle Mobile Menu
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('nav-active');
+                });
+            });
+
+            // Smooth Scroll for navigation links
+            const links = document.querySelectorAll('.nav-links a, .back-to-top');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 50,
+                            behavior: 'smooth',
+                        });
+                    }
+                });
+            });
+
+            // Sticky Header
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
