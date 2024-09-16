@@ -4,17 +4,29 @@
   
   <!-- Lunar Lander Body -->
   <rect id="lander-body" x="35" y="30" width="30" height="30" rx="5" ry="5" fill="#d1d1e0">
-    <animate attributeName="y" values="30;32;30" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="y" values="30;35;30" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="x" values="35;37;35" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="fill" values="#d1d1e0;#ffcc00;#d1d1e0" dur="2s" begin="hover" repeatCount="indefinite"/>
   </rect>
   
   <!-- Landing Legs -->
-  <line x1="35" y1="60" x2="25" y2="75" stroke="#d1d1e0" stroke-width="3"/>
-  <line x1="65" y1="60" x2="75" y2="75" stroke="#d1d1e0" stroke-width="3"/>
+  <line x1="35" y1="60" x2="25" y2="75" stroke="#d1d1e0" stroke-width="3">
+    <animate attributeName="x2" values="25;23;25" dur="2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="65" y1="60" x2="75" y2="75" stroke="#d1d1e0" stroke-width="3">
+    <animate attributeName="x2" values="75;77;75" dur="2s" repeatCount="indefinite"/>
+  </line>
   
   <!-- Antenna -->
   <line x1="50" y1="30" x2="50" y2="15" stroke="#d1d1e0" stroke-width="2"/>
   <circle cx="50" cy="13" r="2" fill="#d1d1e0"/>
   
+  <!-- Thrusters -->
+  <polygon points="40,60 60,60 50,70" fill="#ff6600" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+    <animate attributeName="points" values="40,60 60,60 50,70; 42,62 58,62 50,75; 40,60 60,60 50,70" dur="0.5s" repeatCount="indefinite" />
+  </polygon>
+
   <!-- Moon Surface -->
   <ellipse cx="50" cy="85" rx="40" ry="5" fill="#2e2e3e"/>
   

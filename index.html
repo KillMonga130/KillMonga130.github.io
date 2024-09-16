@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
     <title>Mueletshedzi Moses Mubvafhi - AI Engineer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
@@ -11,6 +13,8 @@
 </head>
 
 <body>
+    <div class="custom-cursor"></div>
+    <!-- Header Section 
     <header class="header">
         <div class="container">
             <nav class="navbar">
@@ -30,7 +34,7 @@
                 </div>
             </nav>
         </div>
-    </header>    
+    </header>   --> 
 
     <!-- Hero Section with Particle Background -->
     <section id="hero" class="hero-section">
@@ -63,6 +67,7 @@
                 <span></span> <!-- The typing effect will dynamically fill this span using JS -->
             </div>
         </div>
+        
     </section>
 
     <!-- About Section -->
@@ -108,99 +113,114 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <a href="https://github.com/KillMonga130/Pac-Man-DCQN" target="_blank">
-                        <img src="./assets/images/pacman.svg" alt="Pac-Man DCQN AI Model">
-                        <h3>Pac-Man DCQN AI Model</h3>
-                    </a>
-                    <p>
-                        Implemented a Deep Convolutional Q-Network (DCQN) model to play Pac-Man using reinforcement learning.
-                        The AI was trained to maximize its score by navigating the game environment efficiently.
-                    </p>
-                    <video controls>
-                        <source src="./assets/videos/pacman_demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
 
-                <div class="project-item">
-                    <a href="https://github.com/KillMonga130/lunar-lander-ai" target="_blank">
-                        <img src="./assets/images/lunar-lander.svg" alt="Lunar Lander AI Model">
-                        <h3>Lunar Lander AI Model</h3>
-                    </a>
-                    <p>
-                        Implemented a Deep Q-Network (DQN) model to solve the Lunar Lander environment using reinforcement learning. 
-                        The model was trained to autonomously land a lunar module, optimizing for fuel efficiency and landing safety.
-                    </p>
-                    <video controls>
-                        <source src="./assets/videos/lunar_lander_demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                
-                <div class="project-item">
-                    <a href="https://github.com/KillMonga130/smartIncidentManagementSystem" target="_blank">
-                        <img src="./assets/images/smart-incident.svg" alt="Smart Incident Management System">
-                        <h3>Smart Incident Management System</h3>
-                    </a>
-                    <p>
-                        A comprehensive system with predictive analytics, resource optimization, and real-time features. 
-                        This project focuses on enhancing incident response efficiency in dynamic environments.
-                        {pending skills: to be continued...}
-                    </p>
-                </div>
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/A3C-KungFu" target="_blank">
+                    <img src="./assets/images/kungfu.webp" alt="A3C for Kung Fu AI Model">
+                    <h3>A3C for Kung Fu AI Model</h3>
+                </a>
+                <p>
+                    Developed an Asynchronous Advantage Actor-Critic (A3C) model to play the Kung Fu Master game using deep reinforcement learning. The AI was trained to fight efficiently, using neural networks and real-time decision-making.
+                </p>
+                <video controls>
+                    <source src="./assets/videos/kungfu.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
-                <div class="project-item">
-                    <a href="https://github.com/KillMonga130/food-delivery-backend" target="_blank">
-                        <img src="./assets/images/food-delivery.svg" alt="Food Delivery Backend">
-                        <h3>Food Delivery Backend</h3>
-                    </a>
-                    <p>
-                        Backend System for a Simplified Food Delivery App, ensuring efficient order management, tracking, 
-                        and seamless integration with delivery partners.
-                    </p>
-                </div>
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/Pac-Man-DCQN" target="_blank">
+                    <img src="./assets/images/pacman.svg" alt="Pac-Man DCQN AI Model">
+                    <h3>Pac-Man DCQN AI Model</h3>
+                </a>
+                <p>
+                    Implemented a Deep Convolutional Q-Network (DCQN) model to play Pac-Man using reinforcement learning.
+                    The AI was trained to maximize its score by navigating the game environment efficiently.
+                </p>
+                <video controls>
+                    <source src="./assets/videos/pacman_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
-                <div class="project-item">
-                    <a href="https://github.com/KillMonga130/User-Behavior-Analysis-and-Product-Recommendation" target="_blank">
-                        <img src="./assets/images/user-behavior.svg" alt="User Behavior Analysis">
-                        <h3>User Behavior Analysis</h3>
-                    </a>
-                    <p>
-                        Analyze user interaction data and build recommendation models. This project includes data preprocessing, 
-                        model training, and evaluation for personalized recommendations.
-                    </p>
-                </div>
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/lunar-lander-ai" target="_blank">
+                    <img src="./assets/images/lunar.webp" alt="Lunar Lander AI Model">
+                    <h3>Lunar Lander AI Model</h3>
+                </a>
+                <p>
+                    Implemented a Deep Q-Network (DQN) model to solve the Lunar Lander environment using reinforcement learning. 
+                    The model was trained to autonomously land a lunar module, optimizing for fuel efficiency and landing safety.
+                </p>
+                <video controls>
+                    <source src="./assets/videos/lunar_lander_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/smartIncidentManagementSystem" target="_blank">
+                    <img src="./assets/images/smart-incident.svg" alt="Smart Incident Management System">
+                    <h3>Smart Incident Management System</h3>
+                </a>
+                <p>
+                    A comprehensive system with predictive analytics, resource optimization, and real-time features. 
+                    This project focuses on enhancing incident response efficiency in dynamic environments.
+                    {pending skills: to be continued...}
+                </p>
+            </div>
 
-                <div class="project-item">
-                    <a href="https://github.com/KillMonga130/To-Do-List-API" target="_blank">
-                        <img src="./assets/images/todo-list.svg" alt="To-Do List API">
-                        <h3>To-Do List API</h3>
-                    </a>
-                    <p>
-                        API for managing to-do tasks with authentication. Built using Node.js, Fastify, and MongoDB, 
-                        this project demonstrates CRUD operations and user authentication.
-                    </p>
-                </div>
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/food-delivery-backend" target="_blank">
+                    <img src="./assets/images/food-delivery.svg" alt="Food Delivery Backend">
+                    <h3>Food Delivery Backend</h3>
+                </a>
+                <p>
+                    Backend System for a Simplified Food Delivery App, ensuring efficient order management, tracking, 
+                    and seamless integration with delivery partners.
+                </p>
+            </div>
 
-                <div class="project-item">
-                    <a href="https://github.com/KillMonga130/Personal-Blogging-Platform-API" target="_blank">
-                        <img src="./assets/images/blogging-platform.svg" alt="Personal Blogging Platform API">
-                        <h3>Personal Blogging Platform API</h3>
-                    </a>
-                    <p>
-                        RESTful API for a personal blogging platform built with Fastify and MongoDB, offering features 
-                        like post management, comments, and user authentication.
-                    </p>
-                </div>
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/User-Behavior-Analysis-and-Product-Recommendation" target="_blank">
+                    <img src="./assets/images/user-behavior.svg" alt="User Behavior Analysis">
+                    <h3>User Behavior Analysis</h3>
+                </a>
+                <p>
+                    Analyze user interaction data and build recommendation models. This project includes data preprocessing, 
+                    model training, and evaluation for personalized recommendations.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/To-Do-List-API" target="_blank">
+                    <img src="./assets/images/todo-list.svg" alt="To-Do List API">
+                    <h3>To-Do List API</h3>
+                </a>
+                <p>
+                    API for managing to-do tasks with authentication. Built using Node.js, Fastify, and MongoDB, 
+                    this project demonstrates CRUD operations and user authentication.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <a href="https://github.com/KillMonga130/Personal-Blogging-Platform-API" target="_blank">
+                    <img src="./assets/images/blogging-platform.svg" alt="Personal Blogging Platform API">
+                    <h3>Personal Blogging Platform API</h3>
+                </a>
+                <p>
+                    RESTful API for a personal blogging platform built with Fastify and MongoDB, offering features 
+                    like post management, comments, and user authentication.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -236,6 +256,7 @@
     </footer>
 
     <!-- Particle Background Script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/particles.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
@@ -285,6 +306,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

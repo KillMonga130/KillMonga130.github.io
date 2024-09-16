@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     particlesJS('hero', {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 100,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -105,6 +105,46 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
         "retina_detect": true
+    });
+
+    // ScrollReveal Animations
+    ScrollReveal().reveal('.about-section, .skills-section, .projects-section, .contact-section', {
+        delay: 200,
+        distance: '50px',
+        origin: 'bottom',
+        duration: 1000
+    });
+
+    // Custom Cursor
+    const customCursor = document.querySelector('.custom-cursor');
+    document.addEventListener('mousemove', (e) => {
+        customCursor.style.top = `${e.clientY}px`;
+        customCursor.style.left = `${e.clientX}px`;
+    });
+
+    // Hover Effect for Links
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('mouseover', () => {
+            customCursor.style.transform = 'scale(1.5)';
+        });
+        link.addEventListener('mouseleave', () => {
+            customCursor.style.transform = 'scale(1)';
+        });
+    });
+
+    // Theme Toggle with LocalStorage
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        themeToggle.textContent = currentTheme === 'dark-mode' ? 'Light Mode' : 'Dark Mode';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const theme = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+        localStorage.setItem('theme', theme);
+        themeToggle.textContent = theme === 'dark-mode' ? 'Light Mode' : 'Dark Mode';
     });
 
     // Toggle Mobile Menu
